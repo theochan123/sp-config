@@ -20,10 +20,10 @@ eureka:
 #可以不配，不配zuul则找到eureka以服务Id作为访问路径
 zuul:
   retryable:  true
-#  routes:
-#    item-service: /item-service/**
-#    user-service: /user-service/**
-#   order-service: /order-service/**
+  routes:
+  item-service: /item-service/**
+  user-service: /user-service/**
+  order-service: /order-service/**
   
 ribbon:
   ConnectTimeout: 1000
